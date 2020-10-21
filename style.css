@@ -1,0 +1,96 @@
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.faq {
+    width: 350px;
+    margin-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.imgs-back {
+    width: 400px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-position: -600px -300px;
+    background-repeat: no-repeat;
+}
+
+label {
+    cursor: pointer;
+}
+
+.layout-container {
+    display: grid;
+    grid-template-areas: "imgs-back faq";
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 75%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.363);
+}
+
+.woman-desk {
+    overflow: hidden;
+}
+
+#woman-desk {
+    margin-left: -80px;
+}
+
+#box-desk {
+    position: absolute;
+    margin-top: -225px;
+    margin-left: -90px;
+}
+
+.query {
+    display: grid;
+    grid-template-areas: "label arrow";
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    padding: 15px 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    color: hsl(237, 12%, 33%);
+}
+
+.query input,
+.query .answer {
+    display: none;
+}
+
+.query label {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.query input:checked ~ .answer {
+    display: block;
+    color: hsl(240, 6%, 50%);
+}
+
+.query-input:checked ~ label {
+    font-weight: bolder;
+}
+
+.query-input:checked ~ .arrow {
+    transform: rotate(180deg);
+}
+
+label:hover {
+    color: hsl(14, 88%, 65%);
+}
